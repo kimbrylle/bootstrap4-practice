@@ -1,0 +1,143 @@
+/* FONTS */
+@font-face {
+	font-family: 'OpenSansRegular';
+	src: url('../fonts/opensans-regular-webfont.eot');
+	src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/opensans-regular-webfont.woff') format('woff'),
+		 url('../fonts/opensans-regular-webfont.ttf') format('truetype'),
+		 url('../fonts/opensans-regular-webfont.svg#OpenSansRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OpenSansBold';
+	src: url('../fonts/opensans-bold-webfont.eot');
+	src: url('../fonts/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/opensans-bold-webfont.woff') format('woff'),
+		 url('../fonts/opensans-bold-webfont.ttf') format('truetype'),
+		 url('../fonts/opensans-bold-webfont.svg#OpenSansBold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* GLOBAL */
+* {
+	outline: none;
+	-webkit-transition: all 0.3s ease;
+	   -moz-transition: all 0.3s ease;
+			transition: all 0.3s ease;
+}
+
+body {
+	background: transparent;
+	color: #000;
+	font-family: OpenSansRegular;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #c0392b;
+	font-family: OpenSansBold;
+	margin: 0;
+}
+
+h1 {
+	font-size: 48px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	cursor: pointer;
+}
+
+a:active,
+a:focus,
+a:hover {
+	outline: none;
+	text-decoration: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+.clearfix:after { clear: both; }
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix { *zoom: 1; }
+
+/* slick styles */
+.slick-slider {
+	position: relative;
+	display: block;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-ms-touch-action: pan-y;
+	touch-action: pan-y;
+	-webkit-tap-highlight-color: transparent;
+}
+.slick-list {
+	position: relative;
+	overflow: hidden;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+.slick-track {
+	position: relative;
+	left: 0;
+	top: 0;
+	display: block;
+}
+.slick-initialized .slick-slide { display: block; }
+.slick-slide {
+	float: left;
+	height: 100%;
+	min-height: 1px;
+	display: none;
+}
+
+.slide-item {
+	text-align: center;
+}
+
+/*------------------------------------------------------------------
+	[ Mobile 480px ]
+-------------------------------------------------------------------*/
+@media only screen and (min-width: 480px) {}
+
+/*------------------------------------------------------------------
+	[ Tablet 768px ]
+-------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) {}
+
+/*------------------------------------------------------------------
+	[ Desktop 992px ]
+-------------------------------------------------------------------*/
+@media only screen and (min-width: 992px) {}
+
+/*------------------------------------------------------------------
+	[ Wide Screen 1200px ]
+-------------------------------------------------------------------*/
+@media only screen and (min-width: 1200px) {}
