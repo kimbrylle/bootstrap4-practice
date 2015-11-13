@@ -98,6 +98,7 @@ a:hover {
 	-webkit-tap-highlight-color: transparent;
 }
 .slick-list {
+	height: auto !important;
 	position: relative;
 	overflow: hidden;
 	display: block;
@@ -120,6 +121,33 @@ a:hover {
 
 .slide-item {
 	text-align: center;
+	width: 100%;
+}
+
+.slide-item img {
+	width: 100%;
+}
+
+.slides button {
+	font-family: Arial;
+	height: 50px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	   -moz-transform: translateY(-50%);
+			transform: translateY(-50%);
+	z-index: 999;
+	width: 50px;
+}
+
+.slides button.slick-prev {
+	left: 0;
+}
+
+.slides button.slick-next {
+	right: 0;
 }
 
 /*------------------------------------------------------------------

@@ -29,9 +29,11 @@
 		fade: true,
 		infinite: true,
 		adaptiveHeight: true,
-		pauseOnHover: false,
-		arrows: false
+		pauseOnHover: false
 	});
+
+	$('.slick-prev').text('◄');
+	$('.slick-next').text('►');
 
 	/* Dealing with FOUC */
 	$('html').removeClass('no-js').addClass('js')
